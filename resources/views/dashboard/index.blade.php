@@ -61,7 +61,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-11 text-left">
-					<a href="index.html" class="text-small color-default">nama.pamor.in</a>
+					<a href="http://nama.{{ env('APP_URL_NAME') }}" class="text-small color-default">nama.pamor.in</a>
 				</div>
 				<div class="col-1 text-center">
 					<div class="row">
