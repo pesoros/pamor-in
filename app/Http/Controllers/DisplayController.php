@@ -13,7 +13,7 @@ class DisplayController extends Controller
      */
     public function index($company_name)
     {
-        return view('display.main', [
+        return view('display.index_ads', [
             'company_name' => $company_name
         ]);
     }

@@ -22,5 +22,8 @@ Route::group(['domain' => '{company_name}.localhost'], function ($company_name) 
     Route::get('/', [DisplayController::class, 'index', $company_name]);
 });
 
-Route::get('/', [DashboardController::class, 'index']);
+Route::get('/', function () {
+    return redirect('/dashboard');
+});
+Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/builder', [BuilderController::class, 'index']);

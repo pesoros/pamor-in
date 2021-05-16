@@ -55,6 +55,7 @@ Table of Content:
 - chat
 - coming soon
 - contact us
+- color pallete
 
 */
 
@@ -63,10 +64,6 @@ Table of Content:
 /* general */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-weight: 400;
-    background: #fff;
 }
 
 h1,
@@ -74,11 +71,9 @@ h2,
 h3,
 h4,
 h5,
-h6  {
+h6,
+text  {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    font-weight: 500;
-    color: #333;
 }
 
 h1 {
@@ -97,7 +92,6 @@ h4 {
     font-size: 22px;
     font-weight: 700;
     padding: 7px;
-    color: #ffffff !important;
 }
 
 h5 {
@@ -112,8 +106,12 @@ h6 {
     font-size: 12px;
 }
 
+text {
+    font-size: 12px;
+}
+
 a {
-    color: #333;
+
 }
 
 a:focus {
@@ -121,7 +119,6 @@ a:focus {
 }
 
 a:hover {
-    color: #333;
     text-decoration: none;
 }
 
@@ -150,6 +147,8 @@ p {
 
 /* image */
 img {
+    width: 100%;
+    height: 100%;
     display: block;
 }
 
@@ -397,11 +396,19 @@ textarea {
 }
 
 .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .text-right {
-    text-align: right;
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-black{
+    color: #182d34;
 }
 
 /* text style */
@@ -428,6 +435,16 @@ textarea {
 
 .text-weight-md {
     font-weight: 500;
+}
+
+.size-name {
+    font-size: 24px;
+    color: #f1f5f8;
+}
+
+.size-description {
+    font-size: 12px;
+    color: #f1f5f8;
 }
 
 /* icon custom style */
@@ -894,12 +911,23 @@ textarea {
         background: #ffffff;
     }
 
+    .footer-wrapper {
+        width: 400px;
+        background: #ffffff;
+        margin-top: -16px;
+        margin-bottom: 50px;  
+    }
+
     .modal-bottom {
         display: flex;
         align-items: center;
         min-height: calc(100% - 16px);
         align-items: end;
         width: 350px;
+    }
+
+    .navbar {
+        width: 355px !important;
     }
 
     body {
@@ -917,7 +945,7 @@ textarea {
     padding: 30px 10px 10px;
     margin-top: 0px;
     background: #ffffff;
-    box-shadow: 2px 2px 10px #00000080;
+    box-shadow: 2px 2px 10px #182d3480;
     border-radius: 18px
 }
 
@@ -925,7 +953,7 @@ textarea {
     padding: 10px;
     margin-top: 0px;
     background: #ffffff;
-    box-shadow: 2px 2px 10px #00000080;
+    box-shadow: 2px 2px 10px #182d3480;
     border-radius: 18px
 }
 
@@ -936,6 +964,20 @@ textarea {
 
 }
 
+.ads-header-wrapper {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 80px;
+    background: #000000;
+}
+
+.ads-footer-wrapper {
+    margin-top: -60px;
+    margin-bottom: 0px;
+    height: 80px;
+    background: #000000;
+}
+
 /* pages wrapper for chat.html only */
 .pages-wrapper-chat {
     padding-bottom: 62px !important;
@@ -943,12 +985,13 @@ textarea {
 
 /* navbar */
 .navbar {
-    background: #fff;
+    background: #182d34;
+    color: #f1f5f8;
     position: fixed;
     top: 20px;
     left: 0;
     right: 0;
-    width: 350px;
+    width: 333px;
     z-index: 99;
     height: 50px;
     display: flex;
@@ -972,8 +1015,7 @@ textarea {
 }
 
 .right {
-    font-size: 25px;
-    color: #ffffff;
+    font-size: 20px;
 }
 .navbar.navbar-home {
     height: 60px;
@@ -1034,7 +1076,6 @@ textarea {
 }
 
 .navbar-highlight {
-    background: #000000;
     border-radius: 18px;
 }
 
@@ -1426,83 +1467,21 @@ textarea {
 
 /* button default */
 .button {
-    background: #000000;
-    border-radius: 4px;
-    padding: 0 12px;
-    line-height: 50px;
-    font-size: 25px;
-    font-weight: 500;
-    color: #fff;
-    text-transform: none;
-    margin-top: 20px;
+    border-radius: 13px;
+    height: 50px;
+    font-size: 12px;
     border: 0;
     width: 100%;
     text-align: center;
-    display: inline-block;
-    box-shadow: 2px 2px 4px #000000;
 }
 
-.button-logo {
-    background: #000000;
-    border-radius: 4px;
-    padding: 0 12px;
-    line-height: 50px;
-    font-size: 24px;
-    font-weight: 500;
-    color: #fff;
-    text-transform: none;
-    margin-top: 20px;
+.button-default {
+    border-radius: 13px;
+    height: 50px;
+    font-size: 12px;
     border: 0;
     width: 100%;
     text-align: center;
-    display: inline-block;
-}
-
-.button-link {
-    background: #000000;
-    border-radius: 4px;
-    padding: 0 9px;
-    line-height: 50px;
-    font-size: 11px;
-    color: #fff;
-    text-transform: none;
-    margin-top: 20px;
-    border: 0;
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-}
-
-.button-publish {
-    background: #000000;
-    border-radius: 4px;
-    padding: 0 12px;
-    line-height: 50px;
-    font-size: 25px;
-    font-weight: 500;
-    color: #fff;
-    text-transform: none;
-    margin-top: 20px;
-    border: 0;
-    width: 350px;
-    text-align: center;
-    display: inline-block;
-}
-
-.button-edit {
-    background: #000000;
-    border-radius: 4px;
-    padding: 0 12px;
-    line-height: 50px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    text-transform: none;
-    margin-top: 20px;
-    border: 0;
-    width: 100%;
-    text-align: center;
-    display: inline-block;
 }
 
 .button i.icon-left {
@@ -1584,7 +1563,8 @@ a.button-outline:hover {
 .card {
     border-radius: 18px;
     border: 0;
-    background: #f5f3fd;
+    padding: 20px;
+    text-align: justify;
 }
 
 .card-outline {
@@ -1643,9 +1623,6 @@ a.button-outline:hover {
 }
 
 .card-subtitle {
-    font-size: 12px;
-    font-weight: 100;
-    color: #fafafa;
     text-align: justify;
 }
 
@@ -2699,4 +2676,52 @@ margin-bottom: -35px;
     height: 200px;
     border: 0;
     border-radius: 18px;
+}
+
+
+/* color pallete */
+/* pl-(white, yellow, orange, blue, green, black, pink, red) */
+
+.color-default {
+    color: #182d34;
+}
+
+.pl-white {
+    background: #f1f5f8;
+    color: #182d34;
+}
+
+.pl-yellow {
+    background: #f4c050;
+    color: #182d34;
+}
+
+.pl-orange {
+    background: #e76247;
+    color: #f1f5f8;
+}
+
+.pl-blue {
+    background: #007ff8;
+    color: #f1f5f8;
+}
+
+.pl-green {
+    background: #15d888;
+    color: #182d34;
+}
+
+.pl-black {
+    background: #182d34;
+    color: #f1f5f8;
+}
+
+.pl-pink {
+    background: #ffb3aa;
+    color: #182d34;
+}
+
+.pl-red {
+    background: #9b1c31;
+    color: #f1f5f8;
 }

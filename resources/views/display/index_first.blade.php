@@ -22,12 +22,12 @@
 	<!-- CSS -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="{{ asset('display/images/favicon.png') }}">
+	<link rel="icon" href="{{ asset('pamorin-assets/images/favicon.png') }}">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-	<link rel="stylesheet" href="{{ asset('display/css/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('display/css/font-awesome.css') }}">
-	<link rel="stylesheet" href="{{ asset('display/css/fakeLoader.css') }}">
-	<link rel="stylesheet" href="{{ asset('display/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('pamorin-assets/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('pamorin-assets/css/font-awesome.css') }}">
+	<link rel="stylesheet" href="{{ asset('pamorin-assets/css/fakeLoader.css') }}">
+	<link rel="stylesheet" href="{{ asset('pamorin-assets/css/style.css') }}">
 
 </head>
 <body>
@@ -45,7 +45,7 @@
 				<div class="container">
 					<div class="intro-content">
 						<div class="mask"></div>
-						<img src="{{ asset('display/images/intro.jpg') }}">
+						<img src="{{ asset('pamorin-assets/images/intro.jpg') }}">
 						<div class="caption">
 							<h4 class="text-white mb-1">{{ $company_name }}</h4>
 							<p class="text-white">Slogan</p>
@@ -139,7 +139,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="img">
-							<img src="{{ asset('display/images/horizontal5.jpg') }}" alt="image-demo">
+							<img src="{{ asset('pamorin-assets/images/horizontal5.jpg') }}" alt="image-demo">
 						</div>
 					</div>
 				</div>
@@ -178,10 +178,10 @@
 	</div>
 	<!-- END FOOTER-->
 
-	<script src="{{ asset('display/js/jquery-3.4.1.min.js') }}"></script>
-	<script src="{{ asset('display/js/bootstrap.bundle.min.js') }}"></script>
-	<script src="{{ asset('display/js/fakeLoader.js') }}"></script>
-	<script src="{{ asset('display/js/jquery.big-slide.js') }}"></script>
-	<script src="{{ asset('display/js/main.js') }}"></script>
+	<script src="{{ asset('pamorin-assets/js/jquery-3.4.1.min.js') }}"></script>
+	<script src="{{ asset('pamorin-assets/js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ asset('pamorin-assets/js/fakeLoader.js') }}"></script>
+	<script src="{{ asset('pamorin-assets/js/jquery.big-slide.js') }}"></script>
+	<script src="{{ asset('pamorin-assets/js/main.js') }}"></script>
 </body>
 </html>
