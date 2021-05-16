@@ -42,7 +42,7 @@
 		Pamor.in
 	</a>
 	<div class="right">
-		<a href="" class="fas fa-sign-out-alt text-black"></a>
+		<a href="{{ route('logout') }}" class="fas fa-sign-out-alt text-black"></a>
 	</div>
 </div>
 <!-- end navbar -->
